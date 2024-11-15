@@ -48,7 +48,6 @@ header h3 {
 header a {
   color: black;
   background-color: white;
-  text-decoration: none;
   border: 1px solid white;
   padding: 16px 32px;
   font-size: 14px;
@@ -58,6 +57,7 @@ header a {
   line-height: 1.5;
   display: inline-block;
   margin-top: 50px;
+  text-decoration: none;
 }
 
 .header-content {
@@ -65,8 +65,66 @@ header a {
   padding-bottom: 50px;
 }
 
-@media (max-width: 900px) {
+.footer-image h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
 
+.footer-image {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(../images/sairee-beach.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin-top: 250px;
+  row-gap: 64px;
+  padding: 100px;
+  max-width: 100%;
+  color: white;
+}
+
+.useful-links {
+  color: white;
+  list-style: none;
+}
+
+.grid-item li {
+  list-style: none;
+  opacity: 0.7;
+}
+
+.grid-item ul {
+  padding: 0;
+}
+
+.grid-item p {
+  opacity: 0.7;
+}
+
+.github-reference {
+  text-decoration: underline !important;
+  opacity: 0.7;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 900px) {
   header {
     padding: 30px 10px;
   }
@@ -89,5 +147,4 @@ header a {
     display: inline-block;
     margin-top: 20px;
   }
-
 }
