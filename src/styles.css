@@ -147,4 +147,21 @@ header a {
     display: inline-block;
     margin-top: 20px;
   }
+
+.grid-container {
+    padding: 0;
+  }
+
+  .footer-image h2 {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .grid-item li, p {
+    font-size: 5px;
+  }
+  .footer-image {
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
