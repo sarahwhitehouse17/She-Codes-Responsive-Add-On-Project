@@ -1,6 +1,91 @@
-h1 {
+body {
   font-family: "Poppins", serif;
+  background-color: #272044;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/tanote-bay.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  color: white;
+  text-align: center;
   font-weight: 400;
   font-style: normal;
-  font-size: 69px;
+  padding: 90px 0;
+}
+
+header h1 {
+  font-size: 96px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+header h2 {
+  font-size: 40px;
+  margin: 0px;
+  font-weight: 400;
+  line-height: 1.5px;
+}
+
+header h3 {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 900px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+
+header a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 3px;
+  text-decoration-color: (39, 32, 68);
+  line-height: 1.5;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.header-content {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+
+  header {
+    padding: 30px 10px;
+  }
+
+  header h1 {
+    font-size: 46px;
+  }
+
+  header h2 {
+    font-size: 12px;
+  }
+
+  header h3 {
+    font-size: 20px;
+  }
+
+  header a {
+    font-size: 6px;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
 }
