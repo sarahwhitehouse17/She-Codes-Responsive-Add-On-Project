@@ -159,6 +159,74 @@ header a {
   color: white;
 }
 
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #272044;
+}
+
+main .btn {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #462cb3;
+  text-decoration: none;
+  padding: 16px;
+  max-width: 300px;
+  text-decoration: none;
+}
+
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid {
+  gap: 64px;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 20px;
+  padding-left: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section {
+  background-color: white;
+}
+
+section h3 {
+  font-size: 40px;
+}
+
+section h2 {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.3;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+section .secondary-section {
+  background-color: #f8f8f8;
+}
+
+.cafe-img {
+  max-height: 225px;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 30px 10px;
@@ -187,6 +255,13 @@ header a {
     padding: 0;
   }
 
+  .grid-3-columns {
+    display: block;
+    grid-template-columns: 1fr;
+    margin: 20px 60px;
+    text-align: center;
+  }
+
   .container-why-koh-tao {
     display: flex;
     justify-content: block;
@@ -200,6 +275,10 @@ header a {
   }
 
   .container-why-koh-tao h3 {
+    font-size: 20px;
+  }
+
+  section h3 {
     font-size: 20px;
   }
 
