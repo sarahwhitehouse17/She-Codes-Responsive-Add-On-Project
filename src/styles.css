@@ -244,6 +244,12 @@ div.card {
   aspect-ratio: 1 /1;
 }
 
+.img-size {
+  max-width: 90%;
+  column-gap: 10px;
+  margin: 0 20px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 30px 10px;
