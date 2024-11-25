@@ -70,22 +70,18 @@ header a {
 }
 
 .container-why-koh-tao {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  padding-top: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 60px;
-  max-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 80px;
+  padding-right: 40px;
+  justify-content: space-around;
+  grid-gap: 40px;
 }
 
 .why-koh-tao-image {
-  width: 500px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-right: 30px;
-  margin-top: 65px;
+  width: 100%;
 }
 
 .container-why-koh-tao h2 {
@@ -104,10 +100,10 @@ header a {
   opacity: 0.7;
 }
 
-a.btn {
-  display: flex;
-  justify-content: start;
-  color: red;
+.gallery-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .footer-image h2 {
@@ -138,15 +134,10 @@ a.btn {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  margin-top: 100px;
   row-gap: 64px;
   padding: 100px;
   max-width: 100%;
   color: white;
-}
-
-div.grid-container {
-  margin-top: 0px;
 }
 
 .useful-links {
@@ -195,12 +186,13 @@ main .btn {
   text-transform: uppercase;
   background-color: #462cb3;
   text-decoration: none;
-  padding: 10px;
-  max-width: 300px;
+  padding: 20px;
   text-decoration: none;
   margin-left: 0px;
-  max-width: 250px;
   margin-bottom: 10px;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .grid {
@@ -235,6 +227,8 @@ section h2 {
 
 section .secondary-section {
   background-color: #f8f8f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .grid-2-columns {
@@ -244,29 +238,39 @@ section .secondary-section {
 .grid-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
   column-gap: 0px;
   margin-bottom: 10px;
+  max-width: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
 }
 
 div.card {
   margin-bottom: 10px;
 }
 
-.map-width {
-  width: 100%;
-  aspect-ratio: 1 /1;
-}
-
-.img-size {
-  max-width: 90%;
-  column-gap: 10px;
-  margin: 0 20px;
+.island-description {
+  font-size: 20px;
 }
 
 @media (max-width: 900px) {
   header {
-    padding: 30px 10px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  body {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  html {
+    overflow-x: hidden;
+    margin: 0 auto;
   }
 
   header h1 {
@@ -281,6 +285,11 @@ div.card {
     font-size: 10px;
   }
 
+  .secondary-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   header a {
     font-size: 6px;
     padding: 5px 12px;
@@ -288,20 +297,15 @@ div.card {
     margin-top: 20px;
   }
 
-  .grid-container {
-    padding: 0;
+  .header-content a {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;
   }
 
   .container-why-koh-tao {
-    display: flex;
-    justify-content: block;
-    margin: 0 auto;
-    background-color: white;
-    padding-top: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
-    max-height: 100%;
+    display: block;
+    margin-left: 0px;
   }
 
   .container-why-koh-tao h3 {
@@ -354,7 +358,19 @@ div.card {
 
   .grid-container {
     display: block;
-    text-align: center;
+  }
+
+  .card {
+    padding-bottom: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: start;
+    margin-bottom: 60px;
+    max-width: 300px;
+  }
+
+  div.card {
+    margin-bottom: 60px;
   }
 
   .cafe-img {
@@ -364,6 +380,14 @@ div.card {
   .grid-2-columns img {
     display: none;
   }
+
+  .grid-2-columns iframe {
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+  }
+
   .grid-3-columns {
     display: block;
     text-align: center;
@@ -372,6 +396,12 @@ div.card {
     display: block;
     margin: 0 auto;
     width: 900px;
+    height: 500px;
+  }
+
+  .gallery-section {
+    margin-top: -50px;
+    padding-top: 12px;
   }
 
   a.btn {
@@ -379,5 +409,8 @@ div.card {
     display: block;
     margin: 30px auto;
     margin-bottom: 10px;
+  }
+  .grid-3-columns img {
+    max-width: 300px;
   }
 }
